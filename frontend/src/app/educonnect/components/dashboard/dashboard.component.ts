@@ -62,6 +62,7 @@ export class DashboardComponent implements OnInit {
             error: (error) => console.log('Error loading courses', error)
         });
 
+<<<<<<< HEAD
         this.educonnectService.getEnrollmentsByStudent(this.studentId).subscribe({
             next: (response) => {
                 this.enrollments = response;
@@ -73,6 +74,8 @@ export class DashboardComponent implements OnInit {
             error: (error) => console.log('Error loading enrollments for logged in student.', error)
         });
 
+=======
+>>>>>>> b8a24b8c6f004b95ee97941f899471299f692b28
         this.educonnectService.getAllStudents().subscribe({
             next: (response) => {
                 this.students = response;
@@ -161,9 +164,13 @@ export class DashboardComponent implements OnInit {
         if (confirm('Are you sure you want to delete your course profile?')) {
             this.educonnectService.deleteCourse(courseId).subscribe({
                 next: () => {
+<<<<<<< HEAD
                    // this.router.navigate(['/']);
                    this.loadTeacherData();
                    this.loadStudentData();
+=======
+                    this.router.navigate(['/']);
+>>>>>>> b8a24b8c6f004b95ee97941f899471299f692b28
                 },
                 error: (error) => console.error('Error deleting course:', error)
 

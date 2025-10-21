@@ -37,7 +37,11 @@ public class EnrollmentServiceImpl implements EnrollmentService {
             throw new RuntimeException("Student is already enrolled in this course.");
         }
 
+<<<<<<< HEAD
         //enrollment.setEnrollmentDate(new Date());
+=======
+        enrollment.setEnrollmentDate(new Date());
+>>>>>>> b8a24b8c6f004b95ee97941f899471299f692b28
         return enrollmentRepository.save(enrollment).getEnrollmentId();
     }
 
@@ -48,7 +52,11 @@ public class EnrollmentServiceImpl implements EnrollmentService {
 
         existingEnrollment.setStudent(updatedEnrollment.getStudent());
         existingEnrollment.setCourse(updatedEnrollment.getCourse());
+<<<<<<< HEAD
         //existingEnrollment.setEnrollmentDate(new Date());
+=======
+        existingEnrollment.setEnrollmentDate(new Date());
+>>>>>>> b8a24b8c6f004b95ee97941f899471299f692b28
 
         enrollmentRepository.save(existingEnrollment);
     }
