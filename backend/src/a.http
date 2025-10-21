@@ -1,0 +1,221 @@
+
+
+
+GET http://localhost:5000/teacher/
+//Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYwODcxNzk1LCJleHAiOjE3NjA5NTgxOTV9.RN2_cUn70DluTSa4vrgnlhPcpLjVStftRxgJSGA4R2DmG20bRnC8TsoXh8hyvQJFMVW34VOTaIcSRduEeNim2Q
+Content-Type: application/json
+
+###
+
+# POST http://localhost:5000/user/login
+# Content-Type: application/json
+
+# {
+#     "username": "Athaulla",
+#     "password": "583Karurqx"
+# }
+
+//Teacher 1 register
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "username": "Athaulla",
+    "password": "583Karurqx",
+    "role": "Teacher",
+    "fullName": "Athaulla GM",
+    "contactNumber": "9765467890",
+    "email": "athaulla@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 16
+}
+###
+
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "Athaulla",
+    "password": "583Karurqx"
+}
+
+###
+
+//Teacher2 register
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+
+
+{
+    "username": "Hemanth",
+    "password": "Hemanth@123",
+    "role": "Teacher",
+    "fullName": "Hemanth Kumar M",
+    "contactNumber": "9765467890",
+    "email": "hemantha@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 16
+}
+
+###
+//Student register1
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+
+
+{
+    "username": "Shankar",
+    "password": "Shankar@123",
+    "role": "Student",
+    "fullName": "Shankar Kumar M",
+    "contactNumber": "9765467890",
+    "email": "shankar@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 16
+}
+
+
+###
+//student registr 2
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+
+
+{
+    "username": "Chai",
+    "password": "Chai@123",
+    "role": "Student",
+    "fullName": "Chai Kumar M",
+    "contactNumber": "9765467890",
+    "email": "chai@gmail.com",
+    "address": "Chennai",
+    "dateOfBirth": "1985-06-15",
+    "subject": "Java",
+    "yearsOfExperience": 16
+}
+
+
+###
+//login teacher1
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "Athaulla",
+    "password": "583Karurqx"
+}
+
+###
+//Get all teachers
+GET http://localhost:5000/teacher
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMDQ1NjgwLCJleHAiOjE3NjExMzIwODB9.sO8vv76_zodTxNAhEzeVBUH4htQVRsEeMpuvvYyWi115sB15UMDFD1X2JPt9U19gYkE0fhelen5fS0wo8_UVGA
+Content-Type: application/json
+
+###
+//get 1 teacher
+GET http://localhost:5000/teacher/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMDQ1NjgwLCJleHAiOjE3NjExMzIwODB9.sO8vv76_zodTxNAhEzeVBUH4htQVRsEeMpuvvYyWi115sB15UMDFD1X2JPt9U19gYkE0fhelen5fS0wo8_UVGA
+Content-Type: application/json
+
+
+###
+//get years by experience
+GET http://localhost:5000/teacher/yearsofexperience
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMDQ1NjgwLCJleHAiOjE3NjExMzIwODB9.sO8vv76_zodTxNAhEzeVBUH4htQVRsEeMpuvvYyWi115sB15UMDFD1X2JPt9U19gYkE0fhelen5fS0wo8_UVGA
+Content-Type: application/json
+
+###
+//delete  teacher 2
+DELETE  http://localhost:5000/teacher/{1}
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MSwiaWF0IjoxNzYxMDQ1NjgwLCJleHAiOjE3NjExMzIwODB9.sO8vv76_zodTxNAhEzeVBUH4htQVRsEeMpuvvYyWi115sB15UMDFD1X2JPt9U19gYkE0fhelen5fS0wo8_UVGA
+Content-Type: application/json
+
+###
+//login teacher2
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username": "Hemanth",
+    "password": "Hemanth@123"
+}
+
+###
+//get all teachers
+GET http://localhost:5000/teacher
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
+
+###
+GET http://localhost:5000/teacher/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
+
+###
+GET http://localhost:5000/enrollments
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
+
+###
+//Add course 1
+POST http://localhost:5000/course
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
+
+
+{
+    "courseName": "Java",
+    "description": "Java 20 days",
+    "teacher" : {
+        "teacherId":2
+    }
+}
+
+###
+//Add course 2
+POST http://localhost:5000/course
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
+
+
+{
+    "courseName": "Python",
+    "description": "Python 20 days",
+    "teacher" : {
+        "teacherId":2
+    }
+}
+
+###
+//Add enrollment1
+POST http://localhost:5000/enrollment
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
+
+{
+    "student":{
+        "studentId":1
+    },
+    "course":{
+        "courseId":1
+    },
+    "enrollmentDate":"2025-02-01"
+}
+
+###
+//Get all enrollments
+GET http://localhost:5000/enrollment
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
+
+
+
